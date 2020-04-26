@@ -18,6 +18,7 @@ package io.plaidapp.designernews.ui.story
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
@@ -72,6 +73,8 @@ internal class CommentViewHolder(
         val expandedThreadOffset = getExpandedThreadOffset()
         val expandedAuthorCommentOffset = getExpandedAuthorCommentOffset()
         val moveInterpolator = getFastOutSlowInInterpolator(itemView.context)
+
+        Log.i("test", "test")
 
         // TODO: Nick - extract the animator here
 
